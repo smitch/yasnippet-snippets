@@ -2,10 +2,10 @@
 # name: try
 # key: try
 # --
-try {
-    $0
+try{
+  $0
 }
-catch (${1:Throwable e}) {
-      ${2:System.out.println("Error " + e.getMessage());
+catch(${1:Exception e}){
+      ${2:System.err.println("Error " + e.getMessage());
       e.printStackTrace();}
 }

@@ -2,6 +2,6 @@
 # name: apr_assert
 # key: apr_assert
 # --
-if (Globals.useAssertions) {
-   ${1:assert ..};
+if(Globals.useAssertions){
+  ${1:assert ..};
 }

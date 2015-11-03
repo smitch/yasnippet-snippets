@@ -2,6 +2,6 @@
 # name: getter
 # key: g
 # --
-public ${1:int} get${2:Field}() {
-       return ${3:field};
+public ${1:int} get${2:Field}(){
+  return ${3:field};
 }

@@ -2,6 +2,6 @@
 # name: iterator
 # key: iterator
 # --
-public Iterator<${1:type}> iterator() {
-       $0
+public Iterator<${1:type}> iterator(){
+  $0
 }
