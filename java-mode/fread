@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: fread
+# key: fread
+# binding: direct-keybinding
+# --
+File ${1:file}=new File(${2:file name});
+BufferedReader ${3:br}=new BufferedReader(new FileReader(${1}));
