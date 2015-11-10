@@ -6,7 +6,10 @@
 try{
   File ${1:file}=new File(${2:file name});
   BufferedReader ${3:br}=new BufferedReader(new FileReader($1));
-  $0
+  String str;
+  while((str=br.readLine())!=null){
+    $0
+  }
   br.close();
 }
 catch(FileNotFoundException e){
