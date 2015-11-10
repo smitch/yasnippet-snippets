@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: printerr
+# key: printerr
+# binding: direct-keybinding
+# --
+System.err.println(${1:err message});
