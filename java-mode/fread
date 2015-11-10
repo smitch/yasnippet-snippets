@@ -3,5 +3,15 @@
 # key: fread
 # binding: direct-keybinding
 # --
-File ${1:file}=new File(${2:file name});
-BufferedReader ${3:br}=new BufferedReader(new FileReader(${1}));
+try{
+  File ${1:file}=new File(${2:file name});
+  BufferedReader ${3:br}=new BufferedReader(new FileReader($1));
+  $0
+  br.close();
+}
+catch(FileNotFoundException e){
+  System.err.println(e);
+}
+catch(IOException e){
+  System.err.println(e);
+}
